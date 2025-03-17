@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 "use client";
 
 import { useWallet } from "@solana/wallet-adapter-react";
@@ -119,7 +121,7 @@ export function WalletDashboard() {
   };
 
   const handleAdPayment = async () => {
-    const fixedAmount = "0.1"; // Fixed amount for ad submission
+    const fixedAmount = "0.01"; // Fixed amount for ad submission
     const fixedRecipient = "4WxHcApXLCLscq3JHkiNZpdvowu5oiiL9e5R4X8ZV6KE"; // Fixed recipient address
   
     if (!publicKey) {
