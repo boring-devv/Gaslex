@@ -1,4 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @next/next/no-img-element */
 
 "use client";
 
@@ -41,7 +43,7 @@ export function WalletDashboard() {
   const [recipient, setRecipient] = useState<string>("");
   const [amount, setAmount] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
-  const [txHistory, setTxHistory] = useState<
+  const [txHistory] = useState<
     Array<{ hash: string; amount: string; date: Date }>
   >([]);
   const [ads, setAds] = useState<Array<{ id: string; link: string; [key: string]: any }>>([]);
